@@ -1,4 +1,6 @@
+
 # Journal for FFXI (Ashita v4)
+[FFXI Journal V0.1.5.zip](https://github.com/user-attachments/files/34091562/FFXI.Journal.V0.1.5.zip)
 
 **Version 0.1.5** · by **Kxteel**
 
