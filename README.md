@@ -1,6 +1,7 @@
 # Journal for FFXI (Ashita v4)
 
 -> **Lastest Version 0.1.14** · by **Kxteel**
+https://github.com/Kxteel/ffxi-journal/archive/refs/heads/main.zip
 
 A quest and mission Journal for Final Fantasy XI, built as an addon for Ashita v4, with a pinned on-screen tracker.
 
