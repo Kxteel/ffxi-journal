@@ -1,6 +1,7 @@
 # Journal for FFXI (Ashita v4)
 
 -> **Lastest Version 0.1.18** · by **Kxteel**
+
 https://github.com/Kxteel/ffxi-journal/releases/download/V0.1.18/Journal.for.FFXI.Ashita.v4.-.V0.1.18.zip
 
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
