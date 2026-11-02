@@ -1,14 +1,12 @@
 # Journal for FFXI (Ashita v4)
 
--> **Lastest Version 0.1.14** · by **Kxteel**
-https://github.com/Kxteel/ffxi-journal/archive/refs/heads/main.zip
+-> **Lastest Version 0.1.18** · by **Kxteel**
+https://github.com/Kxteel/ffxi-journal/releases/download/V0.1.18/Journal.for.FFXI.Ashita.v4.-.V0.1.18.zip
 
-A quest and mission Journal for Final Fantasy XI, built as an addon for Ashita v4, with a pinned on-screen tracker.
-
+A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended with new features and data by Kxteel (For Ashita)
 
-<img width="1834" height="1138" alt="Captura2" src="https://github.com/user-attachments/assets/2736b00d-5019-4d2e-a387-355aeb9aa2a1" />
-
+<img width="1447" height="1083" alt="Captura1" src="https://github.com/user-attachments/assets/4f1c9c6c-a542-49ef-9434-2ecbfa7bd1bb" />
 
 
 ## Features
@@ -77,6 +75,45 @@ startup script (for example `scripts\default.txt`).
   alignment or auto-zone misbehave, please open an issue.
 
 ## Changelog
+
+### 0.1.18
+
+- New: a guide for new adventurers. A button with a green sprout in the Journal toolbar (next to Progress and Settings), or `/journal guide`, opens a window of its own: the contents on the left and the text on the right, in English or in Spanish. It follows the "New Player Guide" of the Phoenix Wiki without changing its content: choosing a nation, the first steps in town, levels 1-10 and 10-20, the milestones, the first gil (the repeatable quests of San d'Oria, Bastok and Windurst), getting around, how Phoenix differs from retail and where to go next. It remembers the section you read last. The window works even when the Journal is closed.
+- The quests named in the guide (the tables of the first gil, the milestones and the Mog House quests) are links: they open that quest in the Journal. Repeatable ones carry the infinity sign. Every page ends with the source.
+- The guide still mentions pages of the Phoenix Wiki (Game Terms, Fame, Jobs and others); they were kept as they are in the original text.
+- New files: `data/guide.lua` (the text of the guide). The sprout is drawn in `icons.lua`, with lines and triangles, so it does not depend on a font.
+- All the texts are translated to Spanish. The translation dictionary now has 4,972 entries.
+- Name list for NPCs extended with the ones of the guide.
+<img width="869" height="824" alt="guide new adventurer" src="https://github.com/user-attachments/assets/55fbc4c9-376c-4da4-bff7-fc0b74498227" />
+
+
+### 0.1.17
+
+- New: step checklist with memory. Each step in the details of a quest or mission has a box. The steps you mark are shown dimmed, the title shows how many are done, for example `(3/10)`, and a **Reset steps** button starts over. The marks are saved per quest or mission, and a mark only counts while the step keeps its text, so a rewritten objective never gets a wrong mark. When a quest or mission is completed its marks are forgotten, so a repeatable quest starts clean the next time.
+- Changed: the Tracker shares the checklist. The current step of a pinned item is always its first step not done. `>` marks the current step as done and skips the ones already done, `<` goes back one step and unmarks it, the automatic step change on zone change marks the step as done, `/journal pin <n>` marks the steps before n as done, and `/journal pin reset` clears the checklist. Pins made before this version keep their progress: the steps before the current one count as done.
+- New: a button with the infinity sign in the header of the quest lists (the right end of the first row, next to "Hide complete quests") that shows only the repeatable quests. It lights up while it is on, it has a tooltip, it combines with the search and the other filters, and it is saved. A jump from a quest link to a quest that is not repeatable turns it off so the jump always arrives. The progress counters do not change with it.
+- The Spanish texts of the above are in `data/ui_es.lua`.
+<img width="1442" height="1081" alt="Captura 2" src="https://github.com/user-attachments/assets/7ec5ea74-dbfb-438a-ba8e-337c722a3e21" />
+
+
+### 0.1.16
+
+- New: repeatable quests are marked with an infinity sign. It appears after the name in the Journal list, next to the title in the details panel, and to the right of the name of every pinned repeatable quest in the Tracker (in the stacked and in the tabs layouts, with its shadow). The sign is drawn with lines, so it does not depend on a font. It uses the new file `icons.lua`.
+- New: automatic pins of the active quests. When it is on, the quests the game reports as active are pinned by themselves (up to the 8 pins of the Tracker, with no message when it is full), and the automatic pins go away when the quest is completed. Pins you made by hand are never removed. A quest you unpin by hand (or that you clear with all the pins) is not pinned again while it stays active. It is off by default. Turn it on in the Settings window ("Pin active quests automatically") or with `/journal pin auto [on|off]`. Turning it off keeps the pins as normal pins. This is for quests only.
+- The Spanish texts of the above are in `data/ui_es.lua`.
+<img width="1443" height="626" alt="Captura3" src="https://github.com/user-attachments/assets/ff0fd01d-27e6-4313-9ac2-b2c2fa54c6fb" />
+
+
+### 0.1.15
+
+- New: links between quests. In the details of a quest (and in its sheet), each quest named in "Prereq" is a line you can click to jump to it, including prereqs with several quests such as "The Fighting Fourth / Snake on the Plains / Steamed Rams". A "Next" list shows the quests that have this one as their prereq (up to 6, with "+N more"), and a "< Back" line returns to the quest you came from (up to 20 jumps; picking a quest from the list starts a new trail). Each link shows [x] if the quest is completed, [>] if active and [ ] if not. If the quest is hidden by the search, "Hide complete" or "Show not started", those are relaxed so the jump always arrives.
+- New: a **Progress** window (button in the Journal toolbar). It lists every mission area and quest category with a bar and "30%  26/85", with the totals of missions and quests at the top. Clicking a row opens that area in the Journal.
+- New: a **Settings** window (button in the Journal toolbar, or `/journal settings`). Language; Journal background opacity (35% to 100%; only the backgrounds fade, the text stays sharp); the four list filters; and for the Tracker: show, layout (stacked or tabs), size, text opacity (35% to 100%), background (0% to 80%, transparent by default), show the next step and auto step on zone change. It also has "Reset window positions", for a window that ended up off the screen. All of it is saved.
+- Changed: the tracker size, next step, auto step and language controls moved from the details panel to the Settings window. The details panel keeps only the Pin to Tracker button.
+- Changed: Esc (or B on a controller) closes the Sheet, the Progress and the Settings windows before it closes the Journal.
+- New file content: the Spanish texts of all of the above are in `data/ui_es.lua`.
+<img width="1432" height="508" alt="Captura4" src="https://github.com/user-attachments/assets/7623db0b-7a61-4b21-80bb-b7987c86ab47" />
+
 
 ### 0.1.14
 
