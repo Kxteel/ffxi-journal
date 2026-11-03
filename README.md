@@ -1,8 +1,7 @@
 # Journal for FFXI (Ashita v4)
 
--> **Lastest Version 0.1.18** · by **Kxteel**
-
-https://github.com/Kxteel/ffxi-journal/releases/download/V0.1.18/Journal.for.FFXI.Ashita.v4.-.V0.1.18.zip
+-> **Lastest Version 0.1.21** · by **Kxteel**
+https://github.com/Kxteel/ffxi-journal/releases/download/V0.1.21/Journal.for.FFXI.Ashita.v4.-.V0.1.21.zip
 
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended with new features and data by Kxteel (For Ashita)
@@ -33,6 +32,8 @@ Work in progress... Verified outside the game (Lua via `lupa` with a mocked ImGu
 - Quest **100%**
 - Steps for Campaign, Assault and CoP missions. **100%**
 - Rank, type and reward data for the remaining mission areas.
+- Newguide
+- 
 <img width="1184" height="734" alt="Captura3" src="https://github.com/user-attachments/assets/4d9051a7-d528-4777-86f4-cc1059f54fa4" />
 
 
@@ -45,7 +46,7 @@ Work in progress... Verified outside the game (Lua via `lupa` with a mocked ImGu
 
 ### Installation
 
-1. Download the latest release (`v0.1.14`) and unzip it.
+1. Download the latest release (`v0.1.21`) and unzip it.
 2. Copy the `journal` folder into your Ashita addons directory:
    `Ashita\addons\journal\`
 3. Make sure the folder keeps its structure (`data/`, `assets/fonts/` and the `.lua` files together).
@@ -75,7 +76,57 @@ startup script (for example `scripts\default.txt`).
 - This version has not been tested in the real FFXI client yet. If fonts, tracker
   alignment or auto-zone misbehave, please open an issue.
 
+
 ## Changelog
+
+### 0.1.21
+
+**Alerts**
+- New: **alert of a new quest or mission**. When the game gives you a new quest or mission, a banner fades in at the center of the screen ("New Quest!" or "New Mission!") with the name of the item, a sound, and the question "Pin it to the Tracker?" with the buttons *Pin to Tracker* and *No thanks*. With no answer in 14 seconds it counts as *No*. If the item is already in the Tracker (for example with the automatic pins on) it does not ask and says so. If several things arrive together they are shown one after the other.
+- New: **alert of a completed quest or mission** ("Quest Completed" or "Mission Completed"), with a green check mark that draws itself beside the title and its own sound. It does not ask anything.
+- The alerts do not fire for what the character already had when logging in, during the first seconds after the addon loads, or when the game sends a reload of the data with many changes at once. An item that stops being active without being completed does not give a completed alert.
+- New: the sounds are your own `.wav` files in `assets/sounds`: `new_quest.wav`, `new_mission.wav`, `complete_quest.wav` and `complete_mission.wav`. If one is missing that alert is silent and the chat says so once.
+- New: an **Alerts** section in the settings window: turn the alerts, the sound and the question about pinning on or off. The new-item alerts and the completed alerts each have their own **background opacity** (0% to 100%), **text size** (60% to 160%) and **color** (the default of the alert or one of 8 colors). Four **test** buttons show each alert on the screen and keep it there while the settings window is open, so the look can be changed in front of it; pressing the button again, or closing the settings, hides it. Clicking the value of a setting resets it.
+- New: `/journal alert [quest|mission] [done]` shows an alert for the item selected in the Journal.
+- New file: `announce.lua` (the banners and the sounds). The check mark and the thumbtack are drawn in `icons.lua`.
+<img width="2006" height="1007" alt="newquest" src="https://github.com/user-attachments/assets/c4d16b71-a00d-4ed7-85fd-eb6e282f17b7" />
+<img width="2014" height="978" alt="questcomplete" src="https://github.com/user-attachments/assets/eb5b612a-dd44-453f-bfbf-6a88e1ed1ec3" />
+
+
+
+**Journal**
+- New: **All** is the first entry of the area selector (missions) and of the category selector (quests). It lists everything together, with the total progress, and the details show the cover of the area of the selected mission. The arrows and the keyboard and controller shortcuts go through it too. A link between quests made from "All" stays in "All". The choice is saved.
+- Changed: the **active** missions and quests are always at the top of the lists, in an area or in "All". The rest keep their order.
+- Changed: a **completed** mission or quest cannot be edited: its steps are shown all done, the boxes do not react, the counter shows `(N/N)` and the Reset steps button is not shown.
+- Removed: the **Progress** button of the Journal toolbar. The progress of each area and the total are still shown in the area selector and its list.
+- Changed: the camps button is now a red question mark drawn with lines, so it no longer depends on an image. The loading of `assets/camps.png` and its message in the chat are gone, and the file is not used any more.
+- New: the setting **Show Journal button on close**. The small Journal button that stayed on the screen when the Journal was closed is now hidden by default; turn it on in the settings to get it back.
+
+**Tracker**
+- Removed: the **Mode** and **Close** buttons at the bottom of the Tracker. The layout and the visibility are still set in the settings window and with `/journal pin mode` and `/journal pin`.
+- New: a small **thumbtack** on every pinned item. Pressing it unpins the item, which stays in gray with an empty thumbtack for 20 seconds so that pressing it again pins it back (with its steps as they were). After that it disappears. In the tabs layout the gray item is shown under the active one.
+
+**Fixes and technical**
+- Fixed: the addon did not load when the settings code used more than 60 values from outside a function, which LuaJIT does not allow ("function has more than 60 upvalues"). The alert and "All" settings are kept in tables and `apply_config` is split in two.
+- All the new texts are translated to Spanish (`data/ui_es.lua`). The chat messages are plain ASCII.
+
+### 0.1.20
+
+- Fixed: in the guide for new adventurers the titles of the contents (Welcome, Choosing a nation and the rest) were cut. The panel is now as wide as the titles need, within limits (it follows the width of the window and the text size), and a title that is still too long goes on more than one line. Clicking any line of a title selects it.
+- Changed: in the mission and quest lists, one click only selects a row and a double click opens its sheet. The keyboard and the controller keep opening the sheet when you confirm.
+- Fixed: the button of the camps. The icon is now loaded again while the Journal is drawn if it could not be loaded at the start (a few tries), the button uses the same call as the button of the mini Journal, it also reacts when that call does not report the click, and if the icon cannot be loaded the chat says so once and the button becomes a plain button with the word Camps. `/journal camps` still opens the window.
+- Fixed: in the camps, the names of the monsters are shown in the color of the monsters (red), also those that are not in the list of names.
+- All the new texts are translated to Spanish.
+<img width="1129" height="713" alt="guide new adventurer" src="https://github.com/user-attachments/assets/b51cac88-4505-42e1-882e-26fee4b08945" />
+
+
+### 0.1.19
+
+- Fixed: a mission or quest that you unpin from the Tracker and pin again started on step 1 and ignored the steps already marked as done in the Journal. Now it starts on the first step that is not done. It also applies to the pin that replaces a completed mission with the next one, to the pins made with `/journal pin add` and to the automatic pins. Unpinning never forgets the marked steps.
+- New: **Camps**, a guide to where to gain experience at each level. A button with its own icon in the Journal toolbar (next to the sprout of the guide), or `/journal camps`, opens a window of its own. It lists the standard and alternate camps with the level range they are good for, the monsters, the area, the map coordinates and a note when there is one. Two ways to read it: *For your level* (the camps of every range that suit the level) and *By level range* (tabs 10 to 70, with the camps that suit the level highlighted). The level is the one of the character when the game gives it, or it is set with - and +. Below level 10 it points to the guide for new adventurers. A checkbox hides the areas marked (S), which belong to Wings of the Goddess. The lists are in `data/camps.lua` (125 camps) and the icon in `assets/camps.png`.
+- New: **Text size** in the settings (80% to 140%). The font of the Journal and of its windows, the height of the buttons and the bars, and the default size of the windows change together, so the text always fits. The Tracker keeps its own size.
+- All the new texts are translated to Spanish. The translation dictionary now has 4,983 entries.
+<img width="689" height="752" alt="camps" src="https://github.com/user-attachments/assets/76b861f4-8207-4b2e-85bb-4a7ffe9362ff" />
 
 ### 0.1.18
 
