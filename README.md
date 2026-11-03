@@ -8,6 +8,8 @@ Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended wit
 
 <img width="1447" height="1083" alt="Captura1" src="https://github.com/user-attachments/assets/4f1c9c6c-a542-49ef-9434-2ecbfa7bd1bb" />
 
+REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
+
 
 ## Features
 
@@ -59,6 +61,9 @@ In the game chat, run:
 
 To load it automatically on every login, add the same line to your Ashita
 startup script (for example `scripts\default.txt`).
+
+REMEMBER ZONE 1 TIME TO UPDATE THE JOURNAL
+
 
 ### First steps
 
