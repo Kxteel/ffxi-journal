@@ -6,7 +6,8 @@ https://github.com/Kxteel/ffxi-journal/releases/download/V0.1.21/Journal.for.FFX
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended with new features and data by Kxteel (For Ashita)
 
-<img width="1447" height="1083" alt="Captura1" src="https://github.com/user-attachments/assets/4f1c9c6c-a542-49ef-9434-2ecbfa7bd1bb" />
+<img width="1344" height="985" alt="inicio1" src="https://github.com/user-attachments/assets/bee13a78-616f-44ae-a056-adc46a97552b" />
+
 
 REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 
@@ -22,12 +23,12 @@ REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 - **"Show not started" filter:** lists untouched content; quests without a tracking ID appear as *Not Tracked*.
 - **Robust:** step text cleanup on load and a protected packet parser.
 
-<img width="1087" height="769" alt="Captura5" src="https://github.com/user-attachments/assets/78152097-88da-4cba-9f22-5f788f1d3ba2" />
+<img width="607" height="510" alt="trakerpin" src="https://github.com/user-attachments/assets/62e52749-50bd-460f-83fa-f3a02902fc76" />
 
 
 ## Status
 
-Work in progress... Verified outside the game (Lua via `lupa` with a mocked ImGui); . Fonts, tracker alignment, auto-zone and style colors are the first things to check in-game.
+Work in progress... 
 
 ## Roadmap
 
@@ -35,8 +36,8 @@ Work in progress... Verified outside the game (Lua via `lupa` with a mocked ImGu
 - Steps for Campaign, Assault and CoP missions. **100%**
 - Rank, type and reward data for the remaining mission areas.
 - Newguide
-- 
-<img width="1184" height="734" alt="Captura3" src="https://github.com/user-attachments/assets/4d9051a7-d528-4777-86f4-cc1059f54fa4" />
+- ....
+<img width="1344" height="984" alt="inicio2" src="https://github.com/user-attachments/assets/749ad11b-9a4b-46a3-ba3a-5d3d9fa28282" />
 
 
 ## How to Start
@@ -58,9 +59,10 @@ Work in progress... Verified outside the game (Lua via `lupa` with a mocked ImGu
 In the game chat, run:
 
     /addon load journal
+    and for open /journal
 
 To load it automatically on every login, add the same line to your Ashita
-startup script (for example `scripts\default.txt`).
+startup script (for example `scripts\default.txt`). Like all rest addons.
 
 REMEMBER ZONE 1 TIME TO UPDATE THE JOURNAL
 
@@ -83,6 +85,10 @@ REMEMBER ZONE 1 TIME TO UPDATE THE JOURNAL
 
 
 ## Changelog
+
+### 0.2.0
+
+Release that groups every change made since 0.1.21 (listed below as steps, newest first): Quest Nearby alert, mission area types, numbered chapters and data for Zilart, Chains of Promathia, Treasures, Adoulin and Rhapsodies, quests grouped by zone, nation and expansion banners, ranks for the nation missions with the completed check, and the Jeuno banner....
 
 ### 0.1.21
 
