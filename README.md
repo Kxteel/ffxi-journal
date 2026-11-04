@@ -49,7 +49,7 @@ Work in progress...
 
 ### Installation
 
-1. Download the latest release (`v0.1.21`) and unzip it.
+1. Download the latest release (`v0.2.0`) and unzip it.
 2. Copy the `journal` folder into your Ashita addons directory:
    `Ashita\addons\journal\`
 3. Make sure the folder keeps its structure (`data/`, `assets/fonts/` and the `.lua` files together).
