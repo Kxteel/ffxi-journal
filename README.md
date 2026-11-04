@@ -22,8 +22,8 @@ REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 - **Auto-zone:** simple travel steps advance when you enter the target zone.
 - **"Show not started" filter:** lists untouched content; quests without a tracking ID appear as *Not Tracked*.
 - **Robust:** step text cleanup on load and a protected packet parser.
+<img width="917" height="676" alt="inicio3" src="https://github.com/user-attachments/assets/f352affb-d6aa-4228-aa1b-8cb5be6bf6a9" />
 
-<img width="607" height="510" alt="trakerpin" src="https://github.com/user-attachments/assets/62e52749-50bd-460f-83fa-f3a02902fc76" />
 
 
 ## Status
