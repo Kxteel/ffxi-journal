@@ -1,7 +1,7 @@
 # Journal for FFXI (Ashita v4)
 
 -> **Lastest Version 0.2.0** · by **Kxteel**
-https://github.com/Kxteel/ffxi-journal/releases/download/V0.1.21/Journal.for.FFXI.Ashita.v4.-.V0.1.21.zip
+https://github.com/Kxteel/ffxi-journal/releases/download/V0.2.0/Journal.for.FFXI.Ashita.v4.-.V0.2.0.zip
 
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended with new features and data by Kxteel (For Ashita)
