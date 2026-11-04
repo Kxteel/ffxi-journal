@@ -137,7 +137,8 @@ Release that groups every change made since 0.1.21 (listed below as steps, newes
 - New: **Camps**, a guide to where to gain experience at each level. A button with its own icon in the Journal toolbar (next to the sprout of the guide), or `/journal camps`, opens a window of its own. It lists the standard and alternate camps with the level range they are good for, the monsters, the area, the map coordinates and a note when there is one. Two ways to read it: *For your level* (the camps of every range that suit the level) and *By level range* (tabs 10 to 70, with the camps that suit the level highlighted). The level is the one of the character when the game gives it, or it is set with - and +. Below level 10 it points to the guide for new adventurers. A checkbox hides the areas marked (S), which belong to Wings of the Goddess. The lists are in `data/camps.lua` (125 camps) and the icon in `assets/camps.png`.
 - New: **Text size** in the settings (80% to 140%). The font of the Journal and of its windows, the height of the buttons and the bars, and the default size of the windows change together, so the text always fits. The Tracker keeps its own size.
 - All the new texts are translated to Spanish. The translation dictionary now has 4,983 entries.
-<img width="689" height="752" alt="camps" src="https://github.com/user-attachments/assets/76b861f4-8207-4b2e-85bb-4a7ffe9362ff" />
+<img width="1318" height="906" alt="inicio5" src="https://github.com/user-attachments/assets/0d9578b6-9667-4e33-ab47-9bd0e3df4610" />
+
 
 ### 0.1.18
 
