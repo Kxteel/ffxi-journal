@@ -28,7 +28,17 @@ REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 - **"Show not started" filter:** lists untouched content; quests without a tracking ID appear as *Not Tracked*.
 - **Robust:** step text cleanup on load and a protected packet parser.
 <img width="917" height="676" alt="inicio3" src="https://github.com/user-attachments/assets/f352affb-d6aa-4228-aa1b-8cb5be6bf6a9" />
+Compass, alerts and arrows in the game world!
+Compass. "Point compass here" points the compass at the NPC of the current step of a quest or mission. The list of NPCs chosen with the search and the pins of the Tracker also show in it. When you get within 20 yalms of an NPC (kept up to 30) that starts a quest you can start, or that has a quest of yours in progress, the NPC is added to the compass by itself (at most 3 automatic ones, and the compass opens if it was closed); its quests are listed under it and a click opens them in the Journal.
+<img width="487" height="411" alt="brujula 2" src="https://github.com/user-attachments/assets/37f5a14e-2248-465c-9633-cd152ed2509f" />
 
+
+Alerts. "Quest Nearby" (near an NPC) lists the quests you can start there. "Quest In Progress" (when you enter a zone) lists the quests you have in progress that belong to that zone, stays a little longer, and its quests open in the Journal with a click. A quest can be started when your main job has the level it needs and the quests it follows are completed; this is read from the requirements and from the text of the first step. Fame, skill, job, mission and expansion pack requirements are not checked.
+
+Arrows in the game world (prototype). /journal mark [on|off|debug] (or the checkbox in Settings > Compass) draws arrows over the NPCs of the compass in the game, found with the camera of Direct3D. It is off by default.
+brujula4
+<img width="1764" height="960" alt="brujula4" src="https://github.com/user-attachments/assets/a8bc387e-0334-4706-9076-6a7de4d98c71" />
+<img width="1249" height="610" alt="brujula6" src="https://github.com/user-attachments/assets/415fb048-7dbd-45cc-ac46-5134c9e07109" />
 
 
 ## Status
