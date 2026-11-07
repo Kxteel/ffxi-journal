@@ -3,8 +3,8 @@
 <img width="3168" height="1344" alt="journalffxi" src="https://github.com/user-attachments/assets/9a04c1db-f4d0-40b4-80e3-8eb0494ea265" />
 
 
--> **Lastest Version 0.2.0** · by **Kxteel**
-https://github.com/Kxteel/ffxi-journal/releases/download/V0.2.0/Journal.for.FFXI.Ashita.v4.-.V0.2.0.zip
+-> **Lastest Version 0.3.0** · by **Kxteel**
+https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.0/Journal.for.FFXI.Ashita.v4.-.V0.3.0.zip
 
 -> **Nexusmod:** https://www.nexusmods.com/finalfantasy11/mods/44
 
