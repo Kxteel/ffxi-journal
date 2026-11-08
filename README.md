@@ -2,8 +2,7 @@
 
 <img width="3168" height="1344" alt="journalffxi" src="https://github.com/user-attachments/assets/9a04c1db-f4d0-40b4-80e3-8eb0494ea265" />
 
-
--> **Lastest Version 0.3.0** · by **Kxteel**
+-> **Lastest Version 0.3.4** · by **Kxteel**
 https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.0/Journal.for.FFXI.Ashita.v4.-.V0.3.0.zip
 
 -> **Nexusmod:** https://www.nexusmods.com/finalfantasy11/mods/44
@@ -11,7 +10,7 @@ https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.0/Journal.for.FFXI
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended with new features and data by Kxteel (For Ashita)
 
-<img width="1344" height="985" alt="inicio1" src="https://github.com/user-attachments/assets/bee13a78-616f-44ae-a056-adc46a97552b" />
+<img width="1411" height="990" alt="captura1" src="https://github.com/user-attachments/assets/f144a8c6-cab5-4f15-afa6-8dade077c3d9" />
 
 
 REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
@@ -27,18 +26,19 @@ REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 - **Auto-zone:** simple travel steps advance when you enter the target zone.
 - **"Show not started" filter:** lists untouched content; quests without a tracking ID appear as *Not Tracked*.
 - **Robust:** step text cleanup on load and a protected packet parser.
-<img width="917" height="676" alt="inicio3" src="https://github.com/user-attachments/assets/f352affb-d6aa-4228-aa1b-8cb5be6bf6a9" />
+<img width="952" height="647" alt="Captura5" src="https://github.com/user-attachments/assets/0e45dab0-6e1b-4755-8d37-fc42ea9b4862" />
+
 Compass, alerts and arrows in the game world!
 Compass. "Point compass here" points the compass at the NPC of the current step of a quest or mission. The list of NPCs chosen with the search and the pins of the Tracker also show in it. When you get within 20 yalms of an NPC (kept up to 30) that starts a quest you can start, or that has a quest of yours in progress, the NPC is added to the compass by itself (at most 3 automatic ones, and the compass opens if it was closed); its quests are listed under it and a click opens them in the Journal.
-<img width="487" height="411" alt="brujula 2" src="https://github.com/user-attachments/assets/37f5a14e-2248-465c-9633-cd152ed2509f" />
+<img width="756" height="478" alt="Captura4" src="https://github.com/user-attachments/assets/934f42ba-88b2-40f2-8f51-2ef8876e6324" />
 
 
 Alerts. "Quest Nearby" (near an NPC) lists the quests you can start there. "Quest In Progress" (when you enter a zone) lists the quests you have in progress that belong to that zone, stays a little longer, and its quests open in the Journal with a click. A quest can be started when your main job has the level it needs and the quests it follows are completed; this is read from the requirements and from the text of the first step. Fame, skill, job, mission and expansion pack requirements are not checked.
 
 Arrows in the game world (prototype). /journal mark [on|off|debug] (or the checkbox in Settings > Compass) draws arrows over the NPCs of the compass in the game, found with the camera of Direct3D. It is off by default.
 brujula4
-<img width="1764" height="960" alt="brujula4" src="https://github.com/user-attachments/assets/a8bc387e-0334-4706-9076-6a7de4d98c71" />
-<img width="1249" height="610" alt="brujula6" src="https://github.com/user-attachments/assets/415fb048-7dbd-45cc-ac46-5134c9e07109" />
+<img width="1553" height="813" alt="Captura2" src="https://github.com/user-attachments/assets/cca11204-bf84-4699-b9b4-ed7983eb09a2" />
+
 
 
 ## Status
