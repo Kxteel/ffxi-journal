@@ -43,7 +43,7 @@ brujula4
 
 ## Status
 
-Work in progress... 
+Work in progress...
 
 ## Roadmap
 
