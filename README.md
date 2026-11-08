@@ -101,7 +101,7 @@ REMEMBER ZONE 1 TIME TO UPDATE THE JOURNAL
 
 
 <img width="3872" height="1088" alt="paypal" src="https://github.com/user-attachments/assets/0fa88c06-87a2-474e-8b20-b4d5f19ba2ad" />
-**Thanks for your donation: https://www.paypal.com/paypalme/kxteel**
+Thanks for your donation: https://www.paypal.com/paypalme/kxteel
 
 ## Changelog
 
