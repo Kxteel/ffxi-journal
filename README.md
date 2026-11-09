@@ -279,7 +279,7 @@ First numbered version. It collects everything added on top of the original addo
 
 ## Credits and licenses
 
-- Original addon: **Lexia** and **Jintawk** (For Windower).
+- Original base addon: AndreWesleyPS
 - Extended and development for Ashita by **Kxteel**.
 - Fonts under the SIL Open Font License (`assets/fonts/OFL-FiraSans.txt`).
 - Data cross-checked with BG-Wiki and moghouse.cc ID tables.
