@@ -3,7 +3,7 @@
 <img width="3168" height="1344" alt="journalffxi" src="https://github.com/user-attachments/assets/9a04c1db-f4d0-40b4-80e3-8eb0494ea265" />
 
 <img width="3872" height="1088" alt="paypal" src="https://github.com/user-attachments/assets/0fa88c06-87a2-474e-8b20-b4d5f19ba2ad" />
-Thanks for your donation: https://www.paypal.com/paypalme/kxteel
+Thanks for your donation to keep growing: https://www.paypal.com/paypalme/kxteel
 
 
 
@@ -14,7 +14,7 @@ https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.4/Journal.for.FFXI
 -> **Nexusmod:** https://www.nexusmods.com/finalfantasy11/mods/44
 
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
-Based on an existing addon by **Lexia** and **Jintawk** (Windower), extended with new features and data by Kxteel (For Ashita)
+Based on an existing addon AndreWesleyPS, extended with new features and more by Kxteel.
 
 <img width="1411" height="990" alt="captura1" src="https://github.com/user-attachments/assets/f144a8c6-cab5-4f15-afa6-8dade077c3d9" />
 
