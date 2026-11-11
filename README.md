@@ -8,8 +8,8 @@ Thanks for your donation to keep growing: https://www.paypal.com/paypalme/kxteel
 
 
 
--> **Lastest Version 0.3.4** · by **Kxteel**
-https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.4/Journal.for.FFXI.Ashita.v4.-.V0.3.4.zip
+-> **Lastest Version 0.3.7** · by **Kxteel**
+https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.7/Journal.V0.3.7.zip
 
 -> **Nexusmod:** https://www.nexusmods.com/finalfantasy11/mods/44
 
