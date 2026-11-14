@@ -2,22 +2,21 @@
 
 <img width="3168" height="1344" alt="journalffxi" src="https://github.com/user-attachments/assets/9a04c1db-f4d0-40b4-80e3-8eb0494ea265" />
 
-<img width="3872" height="1088" alt="paypal" src="https://github.com/user-attachments/assets/0fa88c06-87a2-474e-8b20-b4d5f19ba2ad" />
-Thanks for your donation to keep growing: https://www.paypal.com/paypalme/kxteel
 
+-> **Lastest Version 0.4.0** · by **Kxteel**
+https://github.com/Kxteel/ffxi-journal/releases/tag/V0.4.0
 
+-> **Nexusmod Community:** https://www.nexusmods.com/finalfantasy11/mods/44
 
-
--> **Lastest Version 0.3.7** · by **Kxteel**
-https://github.com/Kxteel/ffxi-journal/releases/download/V0.3.7/Journal.V0.3.7.zip
-
--> **Nexusmod:** https://www.nexusmods.com/finalfantasy11/mods/44
 
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
-Based on an existing addon AndreWesleyPS, extended with new features and more by Kxteel.
+Based on addon by AndreWesleyPS. Extended with new features and more by Kxteel. Only for Vanadiel users :P
 
+Minimalist FFXI skin
 <img width="1411" height="990" alt="captura1" src="https://github.com/user-attachments/assets/f144a8c6-cab5-4f15-afa6-8dade077c3d9" />
 
+Legacy Skin
+<img width="1255" height="765" alt="newtheme" src="https://github.com/user-attachments/assets/924af07f-90ed-4d03-830b-a7e68e26dfe3" />
 
 REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 
@@ -104,6 +103,10 @@ REMEMBER ZONE 1 TIME TO UPDATE THE JOURNAL
 - This version has not been tested in the real FFXI client yet. If fonts, tracker
   alignment or auto-zone misbehave, please open an issue.
 
+
+
+<img width="3872" height="1088" alt="paypal" src="https://github.com/user-attachments/assets/0fa88c06-87a2-474e-8b20-b4d5f19ba2ad" />
+Thanks for your donation to keep growing: https://www.paypal.com/paypalme/kxteel
 
 
 ## Changelog
