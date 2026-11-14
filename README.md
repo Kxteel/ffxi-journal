@@ -29,6 +29,7 @@ REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 - **Objective tracking.** Check off steps as you complete them, and the journal saves your progress. Pin up to 8 missions or quests to the on-screen Tracker to see the next unfinished step. You can also view active entries, favorites, and completion totals by category.
 <img width="952" height="647" alt="Captura5" src="https://github.com/user-attachments/assets/0e45dab0-6e1b-4755-8d37-fc42ea9b4862" />
 
+
 **Compass & zone routes**
 Point the compass at the NPC for your current step, or select a destination to see which zones to travel through. The compass automatically picks up nearby NPCs with available or active quests. Optional in-world NPC markers are available as a prototype.
 <img width="756" height="478" alt="Captura4" src="https://github.com/user-attachments/assets/934f42ba-88b2-40f2-8f51-2ef8876e6324" />
@@ -38,23 +39,28 @@ Point the compass at the NPC for your current step, or select a destination to s
 lists the quests you can start there. "Quest In Progress" (when you enter a zone) lists the quests you have in progress that belong to that zone, stays a little longer, and its quests open in the Journal with a click. A quest can be started when your main job has the level it needs and the quests it follows are completed; this is read from the requirements and from the text of the first step. Fame, skill, job, mission and expansion pack requirements are not checked.
 <img width="2014" height="978" alt="questcomplete" src="https://github.com/user-attachments/assets/1bf0466d-7cbd-4a0e-93a7-1cc7c8c080a4" />
 
+
 - **Alerts and inventory checks.**
 Get alerts for nearby quests, active quests in a zone you enter, and newly obtained quest items. Objectives show how many required items you already have, including key items.
 <img width="1152" height="248" alt="item" src="https://github.com/user-attachments/assets/ef3ed0f1-36af-4c93-8d6d-84f83bfb8299" />
 
 
-Arrows in the game world (prototype). /journal mark [on|off|debug] (or the checkbox in Settings > Compass) draws arrows over the NPCs of the compass in the game, found with the camera of Direct3D. It is off by default.
+- **Arrows in the game world**. /journal mark [on|off|debug] (or the checkbox in Settings > Compass) draws arrows over the NPCs of the compass in the game, found with the camera of Direct3D. It is off by default.
 brujula4
 <img width="1135" height="542" alt="1" src="https://github.com/user-attachments/assets/59de1938-eea0-4e88-bb5a-85e948b09489" />
 <img width="1462" height="641" alt="2" src="https://github.com/user-attachments/assets/ecf33f0c-f6c4-4221-ab1e-c682769710a7" />
 <img width="1553" height="813" alt="Captura2" src="https://github.com/user-attachments/assets/cca11204-bf84-4699-b9b4-ed7983eb09a2" />
 <img width="1093" height="616" alt="quest1" src="https://github.com/user-attachments/assets/c96227ca-aa6e-4e59-8817-c7b5a33a6db3" />
 
+- **Fame, guides, and notes.**
+The journal records your character’s fame when you speak to a **Fame Checker**. It also includes a new player guide, recommended leveling camps, and personal notes you can organize into folders.
+<img width="1048" height="587" alt="notes" src="https://github.com/user-attachments/assets/3aca8e5e-71df-4f00-a10d-badd706e1362" />
 
+- **And muuuuuch more!**
 
 ## Status
 
-Work in progress...
+**Work in progress...**
 
 ## Roadmap
 
@@ -63,9 +69,9 @@ Work in progress...
 - Steps for Campaign, Assault and CoP missions. **100%**
 - Rank, type and reward data for the remaining mission areas. **100%**
 - Newguide **100%**
-- Themes **100%**
 - Fame cheker **100%**
-- 
+- Themes **100%**
+- ...
 
 
 ## How to Start
@@ -77,10 +83,9 @@ Work in progress...
 
 ### Installation
 
-1. Download the latest release (`v0.2.0`) and unzip it.
+1. Download the latest release (`v0.4.0`) and unzip it.
 2. Copy the `journal` folder into your Ashita addons directory:
    `Ashita\addons\journal\`
-3. Make sure the folder keeps its structure (`data/`, `assets/fonts/` and the `.lua` files together).
 
 ### Loading the addon
 
@@ -90,7 +95,7 @@ In the game chat, run:
     and for open /journal
 
 To load it automatically on every login, add the same line to your Ashita
-startup script (for example `scripts\default.txt`). Like all rest addons.
+startup Default script (for example `scripts\default.txt`). Like all rest addons.
 
 REMEMBER ZONE 1 TIME TO UPDATE THE JOURNAL
 
@@ -118,6 +123,38 @@ Thanks for your donation to keep growing: https://www.paypal.com/paypalme/kxteel
 
 
 ## Changelog
+
+### 0.4.0
+
+- **Themes.** Settings > Theme chooses the look of the windows: **Original** (the navy look the addon always had) or **Legacy** (an aged open book). In Legacy the Journal is a two-page book: a leather bar on top with the selectors, buttons and settings, the list of missions or quests on the left page and the details of the sheet on the right page, in dark ink with darker status colors so they read on paper; the selected row gets a burgundy mark. The book keeps a 3:2 shape and scales with the window, and its pages have no scroll bar (the mouse wheel still scrolls). The sheet, Progress, Active Now, General notes, Fame, Zones, Settings, the guide, the camps and the help window use a single parchment page with the same style; the Tracker, the compass and the alerts keep their own look. The choice is shared by all the characters and is saved in `shared_theme.lua` (in `config\addons\journal`, or in the addon folder when that cannot be written). The pictures are `assets/theme/legacy_book.png` (1450 x 948) and `assets/theme/legacy_page.png` (880 x 860); without them Legacy still works with plain parchment colors. The code is in `theme.lua` (margins `TEXT_*`, page scale `PAGE_SCALE`, size limits `DS_MIN`/`DS_MAX`): it changes the values of the color table of `ui.lua` in place, so Original is unchanged. In Legacy the names of NPCs, monsters and items inside the steps take dark colors too.
+<img width="1255" height="765" alt="newtheme" src="https://github.com/user-attachments/assets/924af07f-90ed-4d03-830b-a7e68e26dfe3" />
+
+- **Journal window.** No title bar. The bar with the selectors, buttons and search box starts **hidden** every time the Journal opens; two small buttons at the right corner (a triangle and an **X**) show or hide the bar and close the Journal. The search is cleared whenever the bar is hidden or the Journal is closed.
+<img width="549" height="153" alt="notittle" src="https://github.com/user-attachments/assets/62dae038-9d81-4ced-a613-87b0741ee69a" />
+
+- **Windows without a title bar.** Settings, General notes, Fame, Zones by region, Camps and the new adventurer guide have no title bar; each one has a small **X** in its first row. Zones by region and the guide open twice as big, and the camps twice as tall (never more than 90% of the screen).
+- **New adventurer guide.** In the contents on the left, the first level titles that hold points are headings: yellow letters, a triangle (down for the open group) and the number of points; the points are indented further.
+- **Settings.** The controls fit the window with any theme: long check box texts wrap, the buttons of a stepper go on the next line when the name leaves no room, the color squares and the alert test buttons wrap, and no button is wider than the window.
+- **Route map + Compass.** New feature called Route map to show your route to zone you pinned. The yellow border around the zone pinned in the compass is thinner.
+<img width="1225" height="576" alt="routetomap" src="https://github.com/user-attachments/assets/b10b27ec-6d04-403c-acc8-a7ae5abe19f3" />
+
+- **Zone name banner.** About two seconds after you arrive in a zone, its name fades in in the upper part of the screen, big, in fantasy letters , with a thin line under them, and the region of the zone smaller below (the regions of the list of zones). It stays about three seconds and fades out; it has no background and takes no clicks. While it is on the screen the alerts wait, so the alert of the quests of the zone comes after it. It also shows when the addon is loaded inside a zone (a reload or a login). Without the font file the title font of the Journal is used. In Settings (Alerts) you can change the size and the color of its letters and press *Test: Zone Name* to see it again. There is no setting to turn it off yet.
+<img width="1242" height="345" alt="zone alert" src="https://github.com/user-attachments/assets/d1636d8b-abe2-4ff3-a5e1-b2d9697a9fe0" />
+
+- **Items you have**: when a step of a quest or mission asks for an item ("Obtain Honey x5", "Trade the Black Tiger Fang x3 to ..."), a green V is drawn after the name if you have enough of it, and a counter such as (2/5) while you have some but not enough. It is shown in the steps of the Journal, in the quest sheet and in the Tracker. The count includes everything you own that the game lets the addon read: bag, mog safe, storage, locker, satchel, sack, case and the wardrobes (not the temporary items). Key items named by a step get the green V too when you have them. Items named as a reward ("... and receive X") are not marked. The names are read from the game resources in the first moments after the Journal is drawn, so the marks appear a second later. 
+<img width="827" height="446" alt="update items" src="https://github.com/user-attachments/assets/7c7076d8-11aa-4554-9fb8-3aff9d51657d" />
+
+- **Alert: item obtained for a quest.** When you get an item that a quest in progress asks for (the `items` field of the quest), a banner says *Item Obtained* with the item (and how many you have of how many it needs) and the quest; a click on the quest line opens its sheet. When you have every item of the quest, a different banner says *Items Complete*. Only what you carry counts (bag, satchel, sack, case and wardrobes): taking an item out of the safe or moving it between bags does not trigger it, and neither do the first seconds after logging in or zoning, nor an amount that comes back after dropping (for example the containers read late after a zone change): it only warns at the moment you get something new. Key items asked by the quest count too. Sounds (yours, optional): `assets/sounds/item_found.wav` and `assets/sounds/item_complete.wav` (without the second one the first plays). It has a checkbox and two test buttons in Settings > Alerts; the look is the one of the new / completed alerts.
+<img width="1152" height="248" alt="item" src="https://github.com/user-attachments/assets/329030a3-024e-422a-90aa-943c842336c8" />
+<img width="1036" height="228" alt="itemcomplete" src="https://github.com/user-attachments/assets/fbf27f50-b8e5-4c6c-b7e8-acca0f7373b1" />
+
+- **Quests locked by fame.** A quest that needs more Fame than you have (the `Fame N` requirement of the data, for San d'Oria, Bastok, Windurst and Jeuno) now shows the locked icon in the Journal and the sheet, and counts as locked for the compass arrows and the alerts. It only applies after you have read the Fame of that nation; with "Unknown" fame nothing is locked.
+
+- New **menu** button (three lines) to the left of Settings. It opens a list with one row for each function (icon and name). It groups the new adventurer guide and the camps, whose own buttons are gone from the bar; the functions to come go in this list too.
+
+- General notes: a folder can have a color. Select the folder and pick one of the eight colors (or none) in the Color row; the folder and its notes get a bar of that color in the list.
+
+- **Gate Guards:** the missions of the three nations name their Gate Guards (San d'Oria: Ambrotien, Endracion, Grilau; Bastok: Argus, Cleades, Malduc, Rashid; Windurst: Mokyokyo, Janshura-Rashura, Rakoh Buuma, Zokima-Rokima). They go to the automatic compass when you are close and carry the mission icon (available, in progress or not available).
 
 ### 0.2.0
 
