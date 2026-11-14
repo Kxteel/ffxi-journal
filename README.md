@@ -23,21 +23,32 @@ REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 
 ## Features
 
-- **Detailed entries:** steps, rank, number, type and reward for Windurst, San d'Oria and Bastok missions.
-- **Pinned tracker:** up to 8 missions or quests, stacked or tabbed, transparent and right-aligned. Resizable from 0.6x to 2.0x (Journal buttons or `/journal pin size`), with auto-zone advance and cleanup on completion.
+- **Missions and Quest Journal:** Browse by storyline, region, or category. Each entry shows its status, requirements, rewards, and objectives. Search the entire journal by name, NPC, zone, reward, or objective text.
+<img width="1344" height="984" alt="inicio2" src="https://github.com/user-attachments/assets/749ad11b-9a4b-46a3-ba3a-5d3d9fa28282" />
+  
+- **Objective tracking.** Check off steps as you complete them, and the journal saves your progress. Pin up to 8 missions or quests to the on-screen Tracker to see the next unfinished step. You can also view active entries, favorites, and completion totals by category.
 <img width="952" height="647" alt="Captura5" src="https://github.com/user-attachments/assets/0e45dab0-6e1b-4755-8d37-fc42ea9b4862" />
 
-**Compass, alerts and arrows in the game world!**
-Compass. "Point compass here" points the compass at the NPC of the current step of a quest or mission. The list of NPCs chosen with the search and the pins of the Tracker also show in it. When you get within 20 yalms of an NPC (kept up to 30) that starts a quest you can start, or that has a quest of yours in progress, the NPC is added to the compass by itself (at most 3 automatic ones, and the compass opens if it was closed); its quests are listed under it and a click opens them in the Journal.
+**Compass & zone routes**
+Point the compass at the NPC for your current step, or select a destination to see which zones to travel through. The compass automatically picks up nearby NPCs with available or active quests. Optional in-world NPC markers are available as a prototype.
 <img width="756" height="478" alt="Captura4" src="https://github.com/user-attachments/assets/934f42ba-88b2-40f2-8f51-2ef8876e6324" />
 
 
-**Alerts. "Quest Nearby" (near an NPC)**
+**Alerts. Quest starte, complete & Quest Nearby (near an NPC)**
 lists the quests you can start there. "Quest In Progress" (when you enter a zone) lists the quests you have in progress that belong to that zone, stays a little longer, and its quests open in the Journal with a click. A quest can be started when your main job has the level it needs and the quests it follows are completed; this is read from the requirements and from the text of the first step. Fame, skill, job, mission and expansion pack requirements are not checked.
+<img width="2014" height="978" alt="questcomplete" src="https://github.com/user-attachments/assets/1bf0466d-7cbd-4a0e-93a7-1cc7c8c080a4" />
+
+- **Alerts and inventory checks.**
+Get alerts for nearby quests, active quests in a zone you enter, and newly obtained quest items. Objectives show how many required items you already have, including key items.
+<img width="1152" height="248" alt="item" src="https://github.com/user-attachments/assets/ef3ed0f1-36af-4c93-8d6d-84f83bfb8299" />
+
 
 Arrows in the game world (prototype). /journal mark [on|off|debug] (or the checkbox in Settings > Compass) draws arrows over the NPCs of the compass in the game, found with the camera of Direct3D. It is off by default.
 brujula4
+<img width="1135" height="542" alt="1" src="https://github.com/user-attachments/assets/59de1938-eea0-4e88-bb5a-85e948b09489" />
+<img width="1462" height="641" alt="2" src="https://github.com/user-attachments/assets/ecf33f0c-f6c4-4221-ab1e-c682769710a7" />
 <img width="1553" height="813" alt="Captura2" src="https://github.com/user-attachments/assets/cca11204-bf84-4699-b9b4-ed7983eb09a2" />
+<img width="1093" height="616" alt="quest1" src="https://github.com/user-attachments/assets/c96227ca-aa6e-4e59-8817-c7b5a33a6db3" />
 
 
 
@@ -47,12 +58,14 @@ Work in progress...
 
 ## Roadmap
 
-- Quest **100%**
+- Quest & Missions **100%**
+- Compass & autoCompass NPC **100%**
 - Steps for Campaign, Assault and CoP missions. **100%**
-- Rank, type and reward data for the remaining mission areas.
-- Newguide
-- ....
-<img width="1344" height="984" alt="inicio2" src="https://github.com/user-attachments/assets/749ad11b-9a4b-46a3-ba3a-5d3d9fa28282" />
+- Rank, type and reward data for the remaining mission areas. **100%**
+- Newguide **100%**
+- Themes **100%**
+- Fame cheker **100%**
+- 
 
 
 ## How to Start
