@@ -1,6 +1,6 @@
 # Journal for FFXI (Ashita v4)
 
-<img width="3168" height="1344" alt="journalffxi" src="https://github.com/user-attachments/assets/9a04c1db-f4d0-40b4-80e3-8eb0494ea265" />
+<img width="1774" height="887" alt="Diario FFXI en Windurst" src="https://github.com/user-attachments/assets/37febe13-b8e2-4bd6-b527-112c807d7a61" />
 
 
 -> **Lastest Version 0.4.0** · by **Kxteel**
@@ -12,11 +12,12 @@ https://github.com/Kxteel/ffxi-journal/releases/tag/V0.4.0
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on addon by AndreWesleyPS. Extended with new features and more by Kxteel. Only for Vanadiel users :P
 
+Legacy Skin
+<img width="1255" height="765" alt="newtheme" src="https://github.com/user-attachments/assets/924af07f-90ed-4d03-830b-a7e68e26dfe3" />
+
 Minimalist FFXI skin
 <img width="1411" height="990" alt="captura1" src="https://github.com/user-attachments/assets/f144a8c6-cab5-4f15-afa6-8dade077c3d9" />
 
-Legacy Skin
-<img width="1255" height="765" alt="newtheme" src="https://github.com/user-attachments/assets/924af07f-90ed-4d03-830b-a7e68e26dfe3" />
 
 REMEMBER ZONE 1 TIME TO UPDATE ALL THE JOURNAL YOUR FIRST TIME!!!!!!
 
