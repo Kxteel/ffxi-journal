@@ -12,7 +12,7 @@ https://github.com/Kxteel/ffxi-journal/releases/tag/V0.4.0
 A mission and quest minimalist journal addon for Final Fantasy XI, with progression tracking, quest categories, auto-pin quest. Available languages: English & Spanish.
 Based on addon by AndreWesleyPS. Extended with new features and more by Kxteel. Only for Vanadiel users :P
 
-Legacy Skin
+Legacy Skin (NEW)
 <img width="1255" height="765" alt="newtheme" src="https://github.com/user-attachments/assets/924af07f-90ed-4d03-830b-a7e68e26dfe3" />
 
 Minimalist FFXI skin
