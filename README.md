@@ -57,6 +57,48 @@ brujula4
 The journal records your character’s fame when you speak to a **Fame Checker**. It also includes a new player guide, recommended leveling camps, and personal notes you can organize into folders.
 <img width="1048" height="587" alt="notes" src="https://github.com/user-attachments/assets/3aca8e5e-71df-4f00-a10d-badd706e1362" />
 
+## Vana'dex (monster search)
+
+Vana'dex is a window with every monster the Journal knows, a sheet for each one and a record of the ones you have defeated. It opens from the menu of the bar of the Journal (**Vana'dex (BETA)**, the monster face) or with `/journal monsters`. A click on a monster name in red, in the steps of a quest or mission (in the Journal, in the quest sheet or in the Tracker), opens its sheet.
+
+<img width="1161" height="941" alt="vanadex" src="https://github.com/user-attachments/assets/201bc231-6594-4ad8-aff7-a4f76592880f" />
+
+
+- **Three columns.** At the left, the places: the zone you are in (green border), **Favorites**, and the regions with their zones; every folder shows `(defeated/total)` and a `V` (with the bonus points) when you have defeated them all. In the middle, the monsters of the place you pick (green when defeated, yellow border when notorious). At the right, the sheet.
+- **Search and filters.** A search box, a button to sort by name or by level, **Defeated** (only the ones you still have to defeat), and the filters Notorious, Aggro and Level (your level, plus or minus 5). The Fav button of a sheet pins the monster in Favorites (up to 200).
+- **The sheet.** Species, job, whether it is aggressive, links, true detection, **Where to find it** (the zones from the lowest level to the highest; a click on a zone guides the compass there) and **Drops** with the percent of each item; the name of an item opens its sheet in the Item catalog. Under the sheet there is a **3D view** of the monster (drag to turn it, wheel to zoom, buttons for the animation, wire, reset and background color). It reads the game's own DAT files from your installation: `/journal dat <folder>` sets the folder, `/journal dat reset` goes back to `models/` inside the addon. A monster with no model in the data (mostly the Awoken, Fomor and automatons) shows no 3D view.
+- **Defeats.** When you, your party or your alliance defeat a monster of the list, it is counted for the character (`kills_<character>.lua`, from the packet 0x029). The first time, a banner shows it, with the counter of the zone; entering a zone with monsters you have not defeated gives an alert with how many are left.
+- **Rank.** The defeated monsters give points (more for a higher level, a bonus for the notorious ones, a few extra for the repeats, and bonuses for completing a zone or a region) and the points give a rank, from Rookie to Legend. There are 21 achievements, and a rank up or an achievement gives an alert. The points are worked out from your defeats, so nothing is lost if the numbers change.
+- **Data.** 4,578 monster sheets, 2,489 with drops and 4,145 with a model, from LandSandBoat (GPLv3) and your own tables of the game. LandSandBoat is a server emulator, so levels, zones and drops may differ from the server you play on. The monsters that live only in Abyssea, Nyzul Isle and the Legion maquettes are left out. Detail of each change in the changelog (0.4.1 and 0.4.5).
+
+
+## Item catalog
+
+The Item catalog is a window to search any item and see its sheet. It opens from the menu of the bar of the Journal (**Item catalog (BETA)**, the box) or with `/journal items`.
+
+<img width="714" height="788" alt="itemscatalog" src="https://github.com/user-attachments/assets/9cc274d6-8fdc-4605-a101-2cf61c14053b" />
+
+
+- **List.** A search box, a filter by group (Weapons, Armor, Scrolls, Medicines, Food, Materials, Crystals, Furnishings, Others, Uncategorized) and by subcategory, and a **Favorites** group (the star of the sheet, kept in `shared_items.lua`; the favorites show a yellow star in the list). Items with the same name (the versions of a weapon) are one entry and the sheet lists each version.
+- **Sheet.** The icon, the text of the item (in English) and, under **Dropped by**, the monsters of Vana'dex that drop it with their percent; a click on one opens its sheet. The icons are PNG files named with the id of the item that you copy to `assets/items/` (for example `assets/items/4096.png`).
+- **Links from the steps.** The names of the items in the steps of the quests and missions (in the Journal and in the Tracker) open their sheet with a click, when the catalog has them. The Key Items, the objects of a mission and the names the catalog does not have are not linked.
+- **Data.** From the list of items of the game and the tables of LandSandBoat (GPLv3). The size of the window is remembered.
+
+
+## Vanachat (BETA)
+
+Vanachat is a text chat shared by the users of the addon world wide chat. It opens with the **Chat** button of the bar of the Journal (the Moogle) or with `/journal chat`. It is **off until you press Connect** (`/journal chat on`, or a check box connects it when the addon loads).
+
+<img width="1038" height="744" alt="vanachat" src="https://github.com/user-attachments/assets/cf5a0a2e-1830-4837-a158-ad3dbc899799" />
+
+
+- **Channels.** A row of tabs: General, Spanish, English and Help; plus a **Private chats** tab with the conversations between two users. Each tab has its own lines and its own unread mark, and a ball with a number on the icon of the bar says there are messages you have not read (red if one is private or names you).
+- **Writing.** Enter or **Send**; **Up** and **Down** bring back what you wrote before; **Tab** completes nicks and names of the Journal (quests, missions, NPCs and zones); a click on a nick opens a menu (quote, private message, mute); a web address is shown on its own line and a click copies it.
+- **What to know before connecting.** It uses a public IRC network, Snoonet (`irc.snoonet.org`, `#ffxi-journal`). Your nick is the name of your character (or the one you choose in the settings) and everyone in the channel sees it; nobody checks it. **Nothing is encrypted**: do not write passwords or personal data. The network sees your IP address. Only the private chats are saved on your computer, in a plain text file (`chat_private_<name>.lua`).
+- **Settings.** Name, connect on load, a password for a registered nick, alerts and sound for private messages and mentions. The window can be resized and pinned. All the options, commands (`/journal chat test`, `mute`, `clearpm`...) and details are in the changelog (0.4.1).
+
+
+
 - **And muuuuuch more!**
 
 ## Status
