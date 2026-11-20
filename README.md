@@ -4,7 +4,7 @@
 
 
 -> **Lastest Version 0.4.0** · by **Kxteel**
-https://github.com/Kxteel/ffxi-journal/releases/tag/V0.4.0
+https://github.com/Kxteel/ffxi-journal/releases/tag/V0.4.5
 
 -> **Nexusmod Community:** https://www.nexusmods.com/finalfantasy11/mods/44
 
