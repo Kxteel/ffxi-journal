@@ -1452,9 +1452,9 @@ local function build_quest_link_index()
         return quest_link_index
     end
 
-    if not tracker_is_ready() then
-        return nil
-    end
+    -- No tracker_is_ready() check: the index is built from the data files.
+    -- "Ready" only arrives with the quest log on zoning, so after a reload
+    -- links and search results could not open a quest until then.
 
     local index = {
         by_id = {},
@@ -4126,7 +4126,8 @@ function M.JumpToMission(area, id, name, keep_search)
         end
     end
 
-    if area_index == nil or not tracker_is_ready() then
+    -- No tracker_is_ready() check (see build_quest_link_index).
+    if area_index == nil then
         return false
     end
 
@@ -4490,16 +4491,10 @@ do
             return nil
         end
 
-        if not tracker_is_ready() then
-            return {
-                ready = false,
-                text = search_text,
-                missions = {},
-                quests = {},
-                total_missions = 0,
-                total_quests = 0,
-            }
-        end
+        -- No tracker_is_ready() check: the tracker is only "ready" after the
+        -- server sends the quest log, which happens on zoning, so after a
+        -- reload the search found nothing until the next zone. The lists
+        -- work from the saved statuses meanwhile, and so does the search.
 
         local language = i18n.get_language()
 
