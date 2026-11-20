@@ -3,7 +3,7 @@
 <img width="1774" height="887" alt="Diario FFXI en Windurst" src="https://github.com/user-attachments/assets/37febe13-b8e2-4bd6-b527-112c807d7a61" />
 
 
--> **Lastest Version 0.4.0** · by **Kxteel**
+-> **Lastest Version 0.4.5** · by **Kxteel**
 https://github.com/Kxteel/ffxi-journal/releases/tag/V0.4.5
 
 -> **Nexusmod Community:** https://www.nexusmods.com/finalfantasy11/mods/44
